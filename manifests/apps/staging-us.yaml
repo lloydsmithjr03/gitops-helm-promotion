@@ -8,7 +8,7 @@ metadata:
 spec:
   project: gitops-helm-promotion
   source:
-    chart: bitnami/nginx
+    chart: nginx
     repoURL: 'https://charts.bitnami.com/bitnami'
     targetRevision: 12.0.0
     helm:
