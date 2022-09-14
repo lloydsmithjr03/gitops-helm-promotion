@@ -12,5 +12,5 @@ spec:
   project: gitops-helm-promotion
   source:
     path: manifests/apps
-    repoURL: https://github.com/lloydsmithjr03/gitops-environment-promotion
+    repoURL: https://github.com/lloydsmithjr03/gitops-helm-promotion
     targetRevision: HEAD
