@@ -13,8 +13,6 @@ spec:
     targetRevision: 12.0.0
     helm:
       releaseName: prod-eu-simple-env-helm-2
-      valueFiles:
-        - '../../prod-eu/values.yaml'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: prod-helm-2
