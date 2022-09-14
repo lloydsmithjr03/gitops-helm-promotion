@@ -17,7 +17,7 @@ spec:
         - '../../staging-us/values.yaml'
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: staging-us
+    namespace: staging-helm-2
   syncPolicy:
     automated: {}
     syncOptions:

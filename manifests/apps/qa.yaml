@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     name: 'in-cluster'
-    namespace: qa
+    namespace: qa-helm-2
   project: gitops-helm-promotion
   source:
     chart: simple-env-chart

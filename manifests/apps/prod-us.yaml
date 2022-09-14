@@ -17,7 +17,7 @@ spec:
         - '../../prod-us/values.yaml'
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: prod-us
+    namespace: prod-helm-2
   syncPolicy:
     automated: {}
     syncOptions:

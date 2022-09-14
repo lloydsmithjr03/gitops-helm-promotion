@@ -17,7 +17,7 @@ spec:
         - '../../staging-eu/values.yaml'
   destination:
     name: 'in-cluster'
-    namespace: staging-eu
+    namespace: staging-helm-2
   syncPolicy:
     automated: {}
     syncOptions:
