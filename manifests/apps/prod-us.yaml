@@ -12,7 +12,7 @@ spec:
     repoURL: 'https://github.com/lloydsmithjr03/simple-env-chart'
     targetRevision: 1.0.0
     helm:
-      releaseName: prod-us-simple-env
+      releaseName: prod-us-simple-env-helm-2
       valueFiles:
         - '../../prod-us/values.yaml'
   destination:

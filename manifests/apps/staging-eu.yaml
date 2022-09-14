@@ -12,7 +12,7 @@ spec:
     repoURL: 'https://github.com/lloydsmithjr03/simple-env-chart'
     targetRevision: 1.0.0
     helm:
-      releaseName: staging-eu-simple-env
+      releaseName: staging-eu-simple-env-helm-2
       valueFiles:
         - '../../staging-eu/values.yaml'
   destination:
