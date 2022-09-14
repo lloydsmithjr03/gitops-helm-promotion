@@ -1,0 +1,41 @@
+env:
+  - name: UI_THEME
+    value: dark
+  - name: CACHE_SIZE
+    value: 1024kb
+  - name: PAGE_LIMIT
+    value: "25"
+  - name: SORTING
+    value: ascending
+  - name: N_BUCKETS
+    value: "42"
+  - name: ENV
+    value: staging-eu
+  - name: GPU_ENABLED
+    value: "1"
+  - name: REGION
+    value: eu
+  - name: ENV_TYPE
+    value: non-prod
+  - name: PAYPAL_URL
+    value: staging2.paypal.com
+  - name: DB_USER
+    value: non-prod-user
+  - name: DB_PASSWORD
+    value: non-prod-password
+
+replicaCount: 3
+
+fullnameOverride: staging-eu-simple
+
+service: {
+  type: NodePort,
+  nodePort: 31001
+}
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80

@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prod-us-simple-env
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:  
+  project: gitops-helm-promotion
+  source:
+    chart: simple-env-chart
+    repoURL: 'https://github.com/lloydsmithjr03/simple-env-chart'
+    targetRevision: 1.0.0
+    helm:
+      releaseName: prod-us-simple-env
+      valueFiles:
+        - '../../prod-us/values.yaml'
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: prod-us
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true

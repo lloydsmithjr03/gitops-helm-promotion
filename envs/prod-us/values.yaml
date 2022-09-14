@@ -1,0 +1,41 @@
+env:
+  - name: UI_THEME
+    value: dark
+  - name: CACHE_SIZE
+    value: 1024kb
+  - name: PAGE_LIMIT
+    value: "25"
+  - name: SORTING
+    value: ascending
+  - name: N_BUCKETS
+    value: "42"
+  - name: ENV
+    value: prod-us
+  - name: GPU_ENABLED
+    value: "1"
+  - name: REGION
+    value: us
+  - name: ENV_TYPE
+    value: production
+  - name: PAYPAL_URL
+    value: production.paypal.com
+  - name: DB_USER
+    value: prod_username
+  - name: DB_PASSWORD
+    value: prod_password
+
+replicaCount: 8
+
+fullnameOverride: prod-us-simple
+
+service: {
+  type: NodePort,
+  nodePort: 31002
+}
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 8
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
