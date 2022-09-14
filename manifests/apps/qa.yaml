@@ -16,6 +16,9 @@ spec:
     targetRevision: 12.0.0
     helm:
       releaseName: qa-simple-env-helm-2
+      parameters:
+        - name: service.type
+          value: NodePort
   syncPolicy:
     automated: {}
     syncOptions:
