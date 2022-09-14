@@ -8,9 +8,9 @@ metadata:
 spec:  
   project: gitops-helm-promotion
   source:
-    chart: simple-env-chart
-    repoURL: 'https://github.com/lloydsmithjr03/simple-env-chart'
-    targetRevision: 1.0.0
+    chart: bitnami/nginx
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 12.0.0
     helm:
       releaseName: staging-eu-simple-env-helm-2
       valueFiles:
