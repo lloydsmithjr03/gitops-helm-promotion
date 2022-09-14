@@ -24,7 +24,7 @@ env:
 
 replicaCount: 3
 
-fullnameOverride: qa-simple
+fullnameOverride: qa-simple-helm-2
 
 service: {
   type: NodePort,

@@ -26,7 +26,7 @@ env:
 
 replicaCount: 8
 
-fullnameOverride: prod-us-simple
+fullnameOverride: prod-us-simple-helm-2
 
 service: {
   type: NodePort,
