@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prod-eu-simple-env
+  name: prod-eu-simple-env-helm-2
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
