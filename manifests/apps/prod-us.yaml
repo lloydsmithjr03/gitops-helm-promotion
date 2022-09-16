@@ -13,9 +13,6 @@ spec:
     targetRevision: HEAD
     plugin:
       name: kustomized-helm
-    helm:
-      valueFiles:
-        - ../../overlays/prod-us/values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: prod-helm-2

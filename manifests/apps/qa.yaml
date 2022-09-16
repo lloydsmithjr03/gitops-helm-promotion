@@ -16,9 +16,6 @@ spec:
     targetRevision: HEAD
     plugin:
       name: kustomized-helm
-    helm:
-      valueFiles:
-        - ../../overlays/qa/values.yaml
   syncPolicy:
     automated: {}
     syncOptions:

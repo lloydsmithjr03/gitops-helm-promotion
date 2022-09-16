@@ -13,9 +13,6 @@ spec:
     targetRevision: HEAD
     plugin:
       name: kustomized-helm
-    helm:
-      valueFiles:
-        - ../../overlays/staging-eu/values.yaml
   destination:
     name: 'in-cluster'
     namespace: staging-helm-2
