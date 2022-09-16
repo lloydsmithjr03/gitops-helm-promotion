@@ -11,14 +11,14 @@ spec:
     namespace: qa-helm-2
   project: gitops-helm-promotion
   source:
-    chart: nginx
-    repoURL: 'https://charts.bitnami.com/bitnami'
-    targetRevision: 12.0.0
+    path: kustomized_helm/overlays/qa
+    repoURL: https://github.com/lloydsmithjr03/gitops-helm-promotion
+    targetRevision: HEAD
+    plugin:
+      name: kustomized-helm
     helm:
-      releaseName: qa-simple-env-helm-2
-      parameters:
-        - name: service.type
-          value: NodePort
+      valueFiles:
+        - ../../overlays/qa/values.yaml
   syncPolicy:
     automated: {}
     syncOptions:

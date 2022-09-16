@@ -8,14 +8,11 @@ metadata:
 spec:
   project: gitops-helm-promotion
   source:
-    chart: nginx
-    repoURL: 'https://charts.bitnami.com/bitnami'
-    targetRevision: 12.0.0
-    helm:
-      releaseName: staging-us-simple-env-helm-2
-      parameters:
-        - name: service.type
-          value: NodePort
+    path: kustomized_helm/overlays/staging
+    repoURL: https://github.com/lloydsmithjr03/gitops-helm-promotion
+    targetRevision: HEAD
+    plugin:
+      name: kustomized-helm
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: staging-helm-2
