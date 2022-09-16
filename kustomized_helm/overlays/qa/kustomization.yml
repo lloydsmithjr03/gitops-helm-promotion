@@ -10,8 +10,13 @@ commonLabels:
 namespace: qa-helm-2
 namePrefix: qa-
 
-patchesStrategicMerge:
-  - deployment.yaml
+patchesJson6902:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: deployment
+  path: patch/deployment.yml
 
 resources:
   - namespace.yml
