@@ -8,7 +8,7 @@ metadata:
 spec:  
   project: gitops-helm-promotion
   source:
-    path: kustomized_helm/overlays/prod
+    path: kustomized_helm/overlays/prod-eu
     repoURL: https://github.com/lloydsmithjr03/gitops-helm-promotion
     targetRevision: HEAD
     plugin:
