@@ -10,5 +10,8 @@ commonLabels:
 namespace: qa-helm-2
 namePrefix: qa-
 
+patchesStrategicMerge:
+  - deployment.yaml
+
 resources:
   - namespace.yml
