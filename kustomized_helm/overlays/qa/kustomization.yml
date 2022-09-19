@@ -10,12 +10,12 @@ commonLabels:
 namespace: qa-helm-2
 namePrefix: qa-
 
-patchesJson6902:
+patches:
 - target:
     group: apps
     version: v1
     kind: Deployment
-    name: simple-test-webserver-simple
+    labelSelector: "app.kubernetes.io/name: webserver-simple"
   path: patch/deployment.yml
 
 resources:
