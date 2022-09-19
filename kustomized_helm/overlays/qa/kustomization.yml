@@ -15,7 +15,7 @@ patchesJson6902:
     group: apps
     version: v1
     kind: Deployment
-    name: deployment
+    name: qa-qa-simple-env-helm-2-webserver-simple
   path: patch/deployment.yml
 
 resources:
