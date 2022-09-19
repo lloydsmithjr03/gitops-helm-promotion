@@ -1,55 +1,53 @@
 - op: add
-  path: /spec/template/spec/containers/0/env/-
-  value: 
-    name: ENV
-    value: "qa"
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: GPU_ENABLED
-    value: "1"
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: UI_THEME
-    value: "light"
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: CACHE_SIZE
-    value: "2048kb"
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: PAGE_LIMIT
-    value: "25"
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: SORTING
-    value: "ascending"    
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: N_BUCKETS
-    value: "42"
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: ENV_TYPE
-    value: non-prod
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: PAYPAL_URL
-    value: staging2.paypal.com
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: DB_USER
-    value: non-prod-user
-- op: add
-  path: /spec/template/spec/containers/0/env/-
-  value:
-    name: DB_PASSWORD
-    value: non-prod-password
+  path: /spec/template/spec/containers/0/env/-1
+  value: {name: "ENV",  value: "qa"}
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value: 
+#     name: GPU_ENABLED
+#     value: "1"
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: UI_THEME
+#     value: "light"
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: CACHE_SIZE
+#     value: "2048kb"
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: PAGE_LIMIT
+#     value: "25"
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: SORTING
+#     value: "ascending"    
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: N_BUCKETS
+#     value: "42"
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: ENV_TYPE
+#     value: non-prod
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: PAYPAL_URL
+#     value: staging2.paypal.com
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: DB_USER
+#     value: non-prod-user
+# - op: add
+#   path: /spec/template/spec/containers/0/env/-1
+#   value:
+#     name: DB_PASSWORD
+#     value: non-prod-password
