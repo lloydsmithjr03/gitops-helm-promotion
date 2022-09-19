@@ -11,7 +11,7 @@ global:
     - name: N_BUCKETS
       value: "42"
     - name: ENV
-      value: staging-eu
+      value: prod-eu
     - name: GPU_ENABLED
       value: "1"
     - name: REGION
