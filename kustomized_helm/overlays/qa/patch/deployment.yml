@@ -1,25 +1,55 @@
 - op: add
-  path: /spec/containers/0/env
+  path: /spec/containers/0/env/-
   value: 
-  - name: ENV
+    name: ENV
     value: "qa"
-  - name: GPU_ENABLED
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: GPU_ENABLED
     value: "1"
-  - name: UI_THEME
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: UI_THEME
     value: "light"
-  - name: CACHE_SIZE
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: CACHE_SIZE
     value: "2048kb"
-  - name: PAGE_LIMIT
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: PAGE_LIMIT
     value: "25"
-  - name: SORTING
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: SORTING
     value: "ascending"    
-  - name: N_BUCKETS
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: N_BUCKETS
     value: "42"
-  - name: ENV_TYPE
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: ENV_TYPE
     value: non-prod
-  - name: PAYPAL_URL
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: PAYPAL_URL
     value: staging2.paypal.com
-  - name: DB_USER
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: DB_USER
     value: non-prod-user
-  - name: DB_PASSWORD
+- op: add
+  path: /spec/containers/0/env/-
+  value:
+    name: DB_PASSWORD
     value: non-prod-password
