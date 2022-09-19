@@ -25,3 +25,4 @@ patches:
 
 resources:
   - namespace.yml
+  - rollout.yml
