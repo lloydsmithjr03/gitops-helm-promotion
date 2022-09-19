@@ -15,7 +15,7 @@ patches:
     group: apps
     version: v1
     kind: Deployment
-    labelSelector: "app.kubernetes.io/name: webserver-simple"
+    labelSelector: "app.kubernetes.io/name=webserver-simple"
   path: patch/deployment.yml
 
 resources:
