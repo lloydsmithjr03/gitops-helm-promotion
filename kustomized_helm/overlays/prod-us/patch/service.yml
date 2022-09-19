@@ -3,4 +3,4 @@
   value: NodePort
 - op: add
   path: /spec/ports/0/nodePort
-  value: 31002
+  value: 31004
