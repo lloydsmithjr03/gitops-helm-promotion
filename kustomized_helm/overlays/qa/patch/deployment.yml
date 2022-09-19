@@ -51,3 +51,6 @@
   value:
     name: DB_PASSWORD
     value: non-prod-password
+- op: replace
+  path: /spec/template/spec/replicas
+  value: 3

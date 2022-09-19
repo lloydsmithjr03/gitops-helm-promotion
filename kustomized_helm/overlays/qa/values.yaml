@@ -1,5 +1,3 @@
-replicaCount: 3
-
 fullnameOverride: qa-simple-helm-2
 
 service: {
