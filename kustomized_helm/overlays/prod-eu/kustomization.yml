@@ -10,5 +10,18 @@ commonLabels:
 namespace: prod-helm-2
 namePrefix: prod-eu-
 
+patches:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    labelSelector: "app.kubernetes.io/name=webserver-simple"
+  path: patch/deployment.yml
+- target:
+    version: v1
+    kind: Service
+    labelSelector: "app.kubernetes.io/name=webserver-simple"
+  path: patch/service.yml
+
 resources:
   - namespace.yml

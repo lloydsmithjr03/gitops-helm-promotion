@@ -1,6 +1,0 @@
-fullnameOverride: qa-simple-helm-2
-
-service: {
-  type: NodePort,
-  nodePort: 31000
-}

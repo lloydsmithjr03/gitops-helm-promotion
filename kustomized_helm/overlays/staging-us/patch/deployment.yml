@@ -1,0 +1,61 @@
+- op: add
+  path: /spec/template/spec/containers/0/env
+  value: [{name: "ENV",  value: "staging-us"}]
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value: 
+    name: GPU_ENABLED
+    value: "1"
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: UI_THEME
+    value: "light"
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: CACHE_SIZE
+    value: "1024kb"
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: PAGE_LIMIT
+    value: "25"
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: SORTING
+    value: "ascending"    
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: N_BUCKETS
+    value: "24"
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: ENV_TYPE
+    value: non-prod
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: PAYPAL_URL
+    value: staging2.paypal.com
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: DB_USER
+    value: non-prod-user
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: DB_PASSWORD
+    value: non-prod-password
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: REGION
+    value: us
+- op: replace
+  path: /spec/replicas
+  value: 3
