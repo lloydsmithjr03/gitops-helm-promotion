@@ -10,6 +10,9 @@ commonLabels:
 namespace: staging-helm-2
 namePrefix: staging-eu-
 
+configurations:
+  - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
+
 patches:
 - target:
     group: apps
@@ -22,3 +25,15 @@ patches:
     kind: Service
     labelSelector: "app.kubernetes.io/instance=staging-eu-simple-env-helm-2"
   path: patch/service.yml
+
+resources:
+  - rollout.yml
+
+patchesStrategicMerge:
+- |-
+  apiVersion: argoproj.io/v1alpha1
+  kind: Rollout
+  metadata:
+    name: simple-deployment
+  spec:
+    template: null

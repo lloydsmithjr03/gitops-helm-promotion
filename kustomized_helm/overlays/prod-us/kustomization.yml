@@ -4,9 +4,6 @@ kind: Kustomization
 bases:
 - ../../helm_base
 
-commonLabels:
-  app.kubernetes.io/managed-by: argocd
-
 namespace: prod-helm-2
 namePrefix: prod-us-
 
@@ -25,3 +22,16 @@ patches:
 
 resources:
   - namespace.yml
+  - rollout.yml
+
+configurations:
+  - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
+
+patchesStrategicMerge:
+- |-
+  apiVersion: argoproj.io/v1alpha1
+  kind: Rollout
+  metadata:
+    name: simple-deployment
+  spec:
+    template: null
