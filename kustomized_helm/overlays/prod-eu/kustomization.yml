@@ -22,6 +22,3 @@ patches:
     kind: Service
     labelSelector: "app.kubernetes.io/instance=prod-eu-simple-env-helm-2"
   path: patch/service.yml
-
-resources:
-  - namespace.yml
