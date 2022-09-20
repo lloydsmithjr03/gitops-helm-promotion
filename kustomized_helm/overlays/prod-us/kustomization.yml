@@ -12,7 +12,7 @@ patchesJson6902:
     group: apps
     version: v1
     kind: Deployment
-    name: prod-eu-simple-deployment
+    name: prod-us-simple-deployment
   path: patch/deployment.yml
 - target:
     version: v1
