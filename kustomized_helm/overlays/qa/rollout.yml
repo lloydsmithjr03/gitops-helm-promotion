@@ -6,7 +6,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app.kubernetes.io/instance: qa-simple-env-helm-2
+      app: trivial-go-web-app
   workloadRef:                                 # Reference an existing Deployment using workloadRef field
     apiVersion: apps/v1
     kind: Deployment
