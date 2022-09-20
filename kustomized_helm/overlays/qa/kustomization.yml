@@ -4,8 +4,8 @@ kind: Kustomization
 bases:
 - ../../helm_base
 
-commonLabels:
-  app.kubernetes.io/managed-by: argocd
+# commonLabels:
+#   app.kubernetes.io/managed-by: argocd
 
 namespace: qa-helm-2
 namePrefix: qa-
