@@ -10,7 +10,7 @@ spec:
   workloadRef:                                 # Reference an existing Deployment using workloadRef field
     apiVersion: apps/v1
     kind: Deployment
-    name: qa-qa-simple-env-helm-2-webserver-simple
+    name: simple-deployment
   strategy:
     blueGreen: 
       # activeService specifies the service to update with the new template hash at time of promotion.

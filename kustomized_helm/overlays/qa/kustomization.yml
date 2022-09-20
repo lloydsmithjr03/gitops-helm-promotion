@@ -26,3 +26,6 @@ patches:
 resources:
   - namespace.yml
   - rollout.yml
+
+configurations:
+  - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
