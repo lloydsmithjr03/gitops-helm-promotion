@@ -58,4 +58,4 @@
     value: eu
 - op: replace
   path: /spec/replicas
-  value: 3
+  value: 0
