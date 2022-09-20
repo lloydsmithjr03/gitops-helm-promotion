@@ -10,7 +10,7 @@ bases:
 namespace: qa-helm-2
 namePrefix: qa-
 
-patches:
+patchesJson6902:
 - target:
     group: apps
     version: v1

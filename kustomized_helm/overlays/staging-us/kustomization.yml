@@ -10,7 +10,7 @@ bases:
 namespace: staging-helm-2
 namePrefix: staging-us-
 
-patches:
+patchesJson6902:
 - target:
     group: apps
     version: v1

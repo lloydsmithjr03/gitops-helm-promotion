@@ -7,7 +7,7 @@ bases:
 namespace: prod-helm-2
 namePrefix: prod-us-
 
-patches:
+patchesJson6902:
 - target:
     group: apps
     version: v1

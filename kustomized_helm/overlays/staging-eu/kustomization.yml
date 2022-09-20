@@ -13,7 +13,7 @@ namePrefix: staging-eu-
 configurations:
   - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
 
-patches:
+patchesJson6902:
 - target:
     group: apps
     version: v1
