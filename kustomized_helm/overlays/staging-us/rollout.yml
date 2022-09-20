@@ -10,12 +10,12 @@ spec:
   workloadRef:                                 # Reference an existing Deployment using workloadRef field
     apiVersion: apps/v1
     kind: Deployment
-    name: staging-us-staging-us-simple-env-helm-2-webserver-simple
+    name: staging-us-simple-deployment
   strategy:
     blueGreen: 
       # activeService specifies the service to update with the new template hash at time of promotion.
       # This field is mandatory for the blueGreen update strategy.
-      activeService: staging-us-staging-us-simple-env-helm-2-webserver-simple
+      activeService: staging-us-simple-service
       # previewService specifies the service to update with the new template hash before promotion.
       # This allows the preview stack to be reachable without serving production traffic.
       # This field is optional.
