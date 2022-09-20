@@ -25,3 +25,4 @@ configurations:
 
 resources:
   - rollout.yml
+  - service.yml

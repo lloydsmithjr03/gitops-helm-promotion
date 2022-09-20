@@ -28,3 +28,4 @@ patchesJson6902:
 
 resources:
   - rollout.yml
+  - service.yml

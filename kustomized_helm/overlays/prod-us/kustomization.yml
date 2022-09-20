@@ -23,6 +23,7 @@ patchesJson6902:
 resources:
   - namespace.yml
   - rollout.yml
+  - service.yml
 
 configurations:
   - https://argoproj.github.io/argo-rollouts/features/kustomize/rollout-transform.yaml
