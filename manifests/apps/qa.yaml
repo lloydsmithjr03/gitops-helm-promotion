@@ -14,8 +14,6 @@ spec:
     path: kustomized_helm/overlays/qa
     repoURL: https://github.com/lloydsmithjr03/gitops-helm-promotion
     targetRevision: HEAD
-    plugin:
-      name: kustomized-helm
   syncPolicy:
     automated: {}
     syncOptions:

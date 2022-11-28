@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ConfigManagementPlugin
+metadata:
+  name: kustomized-helm-plugin
+spec:
+  version: v1.0
+  init:
+    # Init always happens immediately before generate, but its output is not treated as manifests.
+    # This is a good place to, for example, download chart dependencies.
+    command: [sh, -c, 'helm dependency build ../../helm_base || true']
+  generate:
+    command: [sh, -c, 'helm template ../../helm_base --name-template $ARGOCD_APP_NAME --include-crds > ../../helm_base/all.yml && kustomize build']
+  discover:
+    find:
+      command: [sh, -c, find $ARGO_CD_APP_SOURCE_PATH/helm_base -name kustomization.yml]
