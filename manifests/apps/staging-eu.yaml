@@ -11,6 +11,7 @@ spec:
     path: kustomized_helm/overlays/staging-eu
     repoURL: https://github.com/lloydsmithjr03/gitops-helm-promotion
     targetRevision: HEAD
+    plugin: {}
   destination:
     name: 'in-cluster'
     namespace: staging-helm-2
